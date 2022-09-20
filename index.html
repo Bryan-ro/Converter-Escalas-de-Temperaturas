@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converção de temperaturas</title>
+</head>
+
+<body>
+    <h1>Converta temperaturas para escalas diferentes</h1>
+    <div class="conteudo">
+        <div class="formulario">
+
+            <label for="temp1">Digite abaixo a temperatura</label><br>
+            <div class="box_seleção">
+                <select id="escalaInicio">
+                    <option>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
+                <input type="number" id="temp1"><br>
+            </div>
+            
+
+            <div class="box">
+                <p class="resultado">Resultado: </p>
+                <div class="borda">
+                    <select id="escalaResul">
+                        <option>Celsius</option>
+                        <option>Fahrenheit</option>
+                        <option>Kelvin</option>
+                    </select>
+                    
+                        
+                        <p id="resultado">
+                </div>
+                <input type="submit" onclick="convert()" id="converter" value="Converter">
+            </div>
+            </form>
+            <script src="main.js"></script>
+</body>
+
+</html>
